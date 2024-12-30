@@ -1,0 +1,92 @@
+
+/* En-tête */
+.header-content {
+    display: flex;
+    justify-content: center; /* Centre horizontalement les éléments */
+    align-items: center;    /* Centre verticalement les éléments */
+    padding: 20px;
+    background: none;       /* Optionnel, supprime l'arrière-plan si nécessaire */
+}
+
+/* Style du logo */
+.site-logo {
+    height: 150px; /* Ajustez la taille si nécessaire */
+    width: auto;
+    margin: 0 auto; /* Centrage horizontal */
+}
+
+/* Style du menu de langues */
+.language-selector {
+    position: absolute;
+    right: 20px; /* Distance par rapport au bord droit */
+    top: 50%;    /* Positionnement vertical */
+    transform: translateY(-50%); /* Centre verticalement */
+    display: flex;
+    align-items: center;
+}
+
+.language-selector label {
+    margin-right: 10px;
+    font-size: 1em;
+    color: white;
+}
+
+.language-selector select {
+    padding: 5px 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    color: #333;
+    cursor: pointer;
+}
+
+.language-selector select:hover {
+    border-color: #0078d7;
+}
+
+/* En-tête avec logo centré et menu à droite */
+.header-content {
+    display: flex;
+    justify-content: space-between; /* Sépare les éléments : logo au centre et menu à droite */
+    align-items: center;
+    padding: 20px;
+    position: relative;
+}
+
+/* Barre de navigation */
+.navbar {
+    margin-top: 10px; /* Espace entre le logo et la barre */
+    text-align: center;
+    background-color: #004080; /* Couleur de fond */
+    padding: 10px 0;
+    border-radius: 8px; /* Coins arrondis */
+}
+
+.nav-list {
+    list-style: none; /* Supprime les puces */
+    margin: 0;
+    padding: 0;
+    display: inline-flex; /* Affiche les éléments sur une ligne */
+    gap: 20px; /* Espacement entre les éléments */
+}
+
+.nav-list li {
+    font-size: 16px;
+}
+
+.nav-list a {
+    text-decoration: none; /* Supprime le soulignement */
+    color: white; /* Couleur du texte */
+    font-weight: bold;
+    padding: 8px 15px;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 4px; /* Arrondi des liens */
+}
+
+.nav-list a:hover {
+    background-color: white; /* Fond blanc au survol */
+    color: #004080; /* Texte bleu */
+}
+
+
