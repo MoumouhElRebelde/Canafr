@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - CANAFR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="header-content">
+        <!-- Logo du site -->
+        <img src="Images/CANAFR%20Logo.png" alt="Logo CANAFR" class="site-logo">
+        <!-- Menu déroulant pour choisir la langue -->
+        <div class="language-selector">
+            <label for="language">Langue :</label>
+            <select id="language">
+                <option value="fr" selected>Français</option>
+                <option value="en">English</option>
+                <option value="ar">العربية</option>
+            </select>
+        </div>
+    </div>
+    <!-- Barre de navigation -->
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li><a href="notre-politique.html">Notre politique</a></li>
+            <li><a href="nos-services.html">Nos services</a></li>
+            <li><a href="s-inscrire.html">S'inscrire</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section>
+        <h2>Contactez-nous</h2>
+        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <label for="company-name">Nom de l'entreprise :</label>
+            <input type="text" id="company-name" name="company-name" required>
+
+            <label for="service">Service souhaité :</label>
+            <input type="text" id="service" name="service" required>
+
+            <label for="email">E-mail :</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Téléphone :</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    &copy; 2024 CANAFR - Tous droits réservés.
+</footer>
+
+</body>
+</html>
