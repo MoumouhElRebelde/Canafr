@@ -7,6 +7,11 @@ body {
     background-color: white; /* Fond blanc */
 }
 
+
+main p, main li {
+    text-align: justify;
+}
+
 /* En-tête */
 header {
     background: #ffffff; /* Couleur principale */
@@ -62,11 +67,11 @@ header {
 
 /* Barre de navigation */
 .navbar {
-    margin-top: 10px;
+    margin-top: 20px;
     text-align: center;
     background-color: #004080;
     padding: 10px 0;
-    border-radius: 8px;
+    border-radius: 20px;
 }
 
 .nav-list {
@@ -78,7 +83,7 @@ header {
 }
 
 .nav-list li {
-    font-size: 16px;
+    font-size: 22px;
 }
 
 .nav-list a {
@@ -87,7 +92,7 @@ header {
     font-weight: bold;
     padding: 8px 15px;
     transition: background-color 0.3s, color 0.3s;
-    border-radius: 4px;
+    border-radius: 40px;
 }
 
 .nav-list a:hover {
@@ -96,13 +101,89 @@ header {
 }
 
 /* Contenu principal */
-main {
-    background: #f9f9f9; /* Fond gris clair pour démarquer le contenu */
-    padding: 20px;
-    border-radius: 8px;
-    margin: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre subtile */
+
+/* Styles pour la page de présentation CANAFR */
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
 }
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #2c3e50;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+p {
+    margin: 10px 0;
+}
+
+ul {
+    margin: 15px 0;
+    padding-left: 40px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+blockquote {
+    margin: 20px 0;
+    padding: 15px 20px;
+    background-color: #ecf0f1;
+    border-left: 5px solid #3498db;
+    font-style: italic;
+    color: #7f8c8d;
+}
+
+.cta {
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 8px;
+}
+
+.cta a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #2980b9;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.cta a:hover {
+    background-color: #1c5985;
+}
+
 
 /* Titres */
 h1, h2 {
@@ -161,7 +242,7 @@ footer {
     text-align: center;
     background: #004080;
     padding: 10px;
-    border-radius: 8px;
+    border-radius: 20px;
     margin: 10px;
     color: white;
 }
