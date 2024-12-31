@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nos Services</title>
     <link rel="stylesheet" href="style.css">
-</head>
+    <script src="script.js" defer></script>
 <body>
 
     <header>
@@ -40,7 +40,47 @@
 
 <main>
 
+        <div class="services-container">
+            <div class="service" onclick="toggleDetails('trading')">
+                <h3>TRADING</h3>
+                <p id="trading" class="details">
+                    Le service de trading de CANAFR est votre passerelle vers des échanges commerciaux réussis entre le Canada et l’Afrique. 
+                    Nous accompagnons nos partenaires dans la sélection des meilleurs produits et services, en garantissant des processus 
+                    transparents et avantageux. Grâce à notre vaste réseau de partenaires et à une compréhension approfondie des marchés 
+                    locaux et internationaux, nous nous engageons à offrir des solutions personnalisées adaptées à vos besoins. Qu'il s'agisse 
+                    de sourcing, de négociation ou de gestion des risques, nous veillons à ce que chaque transaction soit une opportunité 
+                    stratégique pour la croissance de votre entreprise.
+                </p>
+            </div>
+            <div class="service" onclick="toggleDetails('logistique')">
+                <h3>LOGISTIQUE</h3>
+                <p id="logistique" class="details">
+                    Avec CANAFR, la logistique devient un atout stratégique dans vos échanges commerciaux. Nous prenons en charge 
+                    l'intégralité du cycle de transport, depuis l'origine jusqu'à la destination finale, en simplifiant les processus 
+                    complexes tels que les formalités douanières, la gestion documentaire et les solutions d’entreposage. En collaborant 
+                    avec des transporteurs fiables et des partenaires locaux de confiance, nous réduisons les délais et optimisons les coûts. 
+                    Notre expertise vous assure une livraison rapide, sécurisée et sans encombre, pour que vous puissiez vous concentrer sur 
+                    vos priorités commerciales.
+                </p>
+            </div>
+            <div class="service" onclick="toggleDetails('networking')">
+                <h3>NETWORKING</h3>
+                <p id="networking" class="details">
+                    Chez CANAFR, nous croyons fermement que les connexions solides sont la clé du succès. C’est pourquoi notre service 
+                    de networking se consacre à créer des opportunités uniques pour les entreprises canadiennes et africaines. En organisant des forums économiques 
+                    et des rencontres B2B étudiées et ciblées, nous facilitons les échanges entre décideurs, 
+                    entrepreneurs et investisseurs. En favorisant le partage d’idées, la co-création de solutions et la collaboration stratégique, 
+                    nous bâtissons un écosystème durable où les relations professionnelles deviennent des leviers de succès à long terme.
+                </p>
+            </div>
+        </div>
 
+        <script>
+            function toggleDetails(id) {
+                const detail = document.getElementById(id);
+                detail.style.display = detail.style.display === 'block' ? 'none' : 'block';
+            }
+        </script>
 
 </main>
 
