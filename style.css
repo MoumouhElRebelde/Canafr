@@ -253,7 +253,7 @@ footer {
     display: flex;
     justify-content: space-between;
     gap: 20px;
-    height: 65vh; /* Hauteur de la page web */
+    height: 64vh; /* Hauteur de la page web */
     margin: 0;
     padding: 0 20px;
     background-color: #f9f9f9;
@@ -312,4 +312,63 @@ footer {
 
 .service.active .details {
     display: block;
+}
+
+/* Responsiveness pour les petits écrans */
+@media (max-width: 1024px) {
+    .header-content {
+        flex-direction: column; /* Empile les éléments verticalement */
+        align-items: center;
+    }
+
+    .language-selector {
+        position: static; /* Réinitialise le positionnement absolu */
+        margin-top: 10px;
+    }
+
+    .nav-list {
+        flex-direction: column; /* Empile les éléments du menu verticalement */
+        gap: 10px; /* Réduit l'espace entre les éléments */
+    }
+
+    .services-container {
+        flex-direction: column; /* Les services passent en disposition verticale */
+        gap: 30px;
+        height: auto; /* Ajuste automatiquement la hauteur */
+    }
+}
+
+/* Responsiveness pour les très petits écrans */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5em; /* Réduit la taille des titres */
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    .service {
+        padding: 10px; /* Réduit le padding */
+        border-radius: 6px;
+    }
+
+    .service h3 {
+        font-size: 1.5em; /* Réduit la taille du titre */
+    }
+
+    .service .details {
+        font-size: 0.9em; /* Texte plus petit */
+        padding: 10px;
+    }
+
+    footer {
+        font-size: 0.9em;
+        padding: 5px;
+    }
+
+    form {
+        padding: 10px; /* Réduit l'espace dans le formulaire */
+        gap: 10px;
+    }
 }
