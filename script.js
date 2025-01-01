@@ -40,11 +40,12 @@ document.getElementById('contactForm').addEventListener('submit', async (e) => {
     try {
         // Envoie une requête POST avec les données du formulaire
         const response = await fetch(scriptURL, {
-            method: 'POST',
-            body: JSON.stringify(formData),
-            headers: {
-                'Content-Type': 'application/json'
-            }
+                method: 'POST',
+                body: JSON.stringify(formData),
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                mode: 'cors' // Important pour activer les CORS
         });
 
         // Gère la réponse
